@@ -52,6 +52,11 @@ const studentBase = {
 
 const juan = deepCopy(studentBase);
 
+Object.seal(juan);
+Object.freeze(juan);
+Object.isSealed(juan);
+Object.isFrozen(juan);
+
 Object.defineProperty(juan, 'name', {
   value: 'Juan',
   configurable: false,
